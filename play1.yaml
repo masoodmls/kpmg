@@ -11,5 +11,5 @@
 
   - name : creating the file called welcome under /oracle
     copy:
-      content: "Welcome to Ansible Autoamtion\n"
+      content: "Welcome to Ansible Autoamtion  by RPS \n"
       dest: /oracle/welcome
