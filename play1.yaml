@@ -1,0 +1,15 @@
+---
+- name : ansible play book example
+  hosts : all
+  remote_user : rps
+  become : true
+  tasks:
+  - name : creating the directory /oracle
+    file:
+      path: /oracle
+      state : directory
+
+  - name : creating the file called welcome under /oracle
+    copy:
+      content: "Welcome to Ansible Autoamtion\n"
+      dest: /oracle/welcome
